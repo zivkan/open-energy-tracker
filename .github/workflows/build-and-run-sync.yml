@@ -1,0 +1,63 @@
+name: Update energy plans
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run'
+        type: boolean
+        required: false
+        default: false
+  schedule:
+    - cron: "0 12 1 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: x
+
+      - name: Restore
+        run: |
+          dotnet restore src/sync/sync.csproj
+
+      - name: Build
+        run: |
+          dotnet build src/sync/sync.csproj --configuration Release --no-restore
+
+      - name: Publish
+        run: |
+          dotnet publish src/sync/sync.csproj --configuration Release --no-restore --output artifacts/sync
+
+      - name: Run sync app
+        if: ${{ github.repository == 'zivkan/open-energy-tracker' }}
+        run: |
+          dotnet ./artifacts/sync/sync.dll "${{ github.workspace }}/data"
+
+      - name: Commit and push changes (if any)
+        shell: bash
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "git status --porcelain:" 
+            git status --porcelain
+            if [[ "${{ inputs.dry_run }}" == "false" ]]; then
+              git config user.name "github-actions[bot]"
+              git config user.email "github-actions[bot]@users.noreply.github.com"
+              git add -A
+              git commit -m "Get latest plans"
+              git push
+            fi
+          else
+            echo "No changes to commit."
+          fi

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "sync": {
+      "commandName": "Project",
+      "commandLineArgs": "\"$(ProjectDir)\\..\\..\\data\""
+    }
+  }
+}
