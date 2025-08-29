@@ -10,6 +10,6 @@ try
 }
 catch (Exception ex)
 {
-    Console.Error.WriteLine($"Fatal error: {ex.Message}");
+    Console.Error.WriteLine($"Fatal error: {ex}");
     return 1;
 }
