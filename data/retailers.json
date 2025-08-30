@@ -1,0 +1,346 @@
+[
+  {
+    "Brand": "1st-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/1st-energy/"
+  },
+  {
+    "Brand": "actewagl",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/actewagl/"
+  },
+  {
+    "Brand": "active-utilities",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/active-utilities/"
+  },
+  {
+    "Brand": "agl",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/agl/"
+  },
+  {
+    "Brand": "alinta",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/alinta/"
+  },
+  {
+    "Brand": "altogether",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/altogether/"
+  },
+  {
+    "Brand": "amber",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/amber/"
+  },
+  {
+    "Brand": "ampol",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/ampol/"
+  },
+  {
+    "Brand": "arc-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/arc-energy/"
+  },
+  {
+    "Brand": "arcline",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/arcline/"
+  },
+  {
+    "Brand": "arcstream",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/arcstream/"
+  },
+  {
+    "Brand": "aurora",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/aurora/"
+  },
+  {
+    "Brand": "besy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/besy/"
+  },
+  {
+    "Brand": "blue-nrg",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/blue-nrg/"
+  },
+  {
+    "Brand": "brighte",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/brighte/"
+  },
+  {
+    "Brand": "circular",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/circular/"
+  },
+  {
+    "Brand": "cleanco",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/cleanco/"
+  },
+  {
+    "Brand": "cleanpeak",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/cleanpeak/"
+  },
+  {
+    "Brand": "coles",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/coles/"
+  },
+  {
+    "Brand": "cooperative",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/energy-locals/"
+  },
+  {
+    "Brand": "covau",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/covau/"
+  },
+  {
+    "Brand": "cpe-mascot",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/cpe-mascot/"
+  },
+  {
+    "Brand": "diamond",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/diamond/"
+  },
+  {
+    "Brand": "discover",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/discover/"
+  },
+  {
+    "Brand": "dodo",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/dodo/"
+  },
+  {
+    "Brand": "ea-connect",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/ea-connect/"
+  },
+  {
+    "Brand": "electricity-in-a-box",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/electricity-in-a-box/"
+  },
+  {
+    "Brand": "energy-locals",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/energy-locals/"
+  },
+  {
+    "Brand": "energyaustralia",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/energyaustralia/"
+  },
+  {
+    "Brand": "engie",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/engie/"
+  },
+  {
+    "Brand": "ergon",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/ergon/"
+  },
+  {
+    "Brand": "evergy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/evergy/"
+  },
+  {
+    "Brand": "flipped",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/flipped/"
+  },
+  {
+    "Brand": "flow-power",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/flow-power/"
+  },
+  {
+    "Brand": "flow-systems",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/flow-systems/"
+  },
+  {
+    "Brand": "future-x",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/future-x/"
+  },
+  {
+    "Brand": "gee-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/gee-energy/"
+  },
+  {
+    "Brand": "globird",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/globird/"
+  },
+  {
+    "Brand": "glow-power",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/glow-power/"
+  },
+  {
+    "Brand": "humenergy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/humenergy/"
+  },
+  {
+    "Brand": "igeno",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/igeno/"
+  },
+  {
+    "Brand": "indigo",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/energy-locals/"
+  },
+  {
+    "Brand": "io-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/io-energy/"
+  },
+  {
+    "Brand": "kogan",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/kogan/"
+  },
+  {
+    "Brand": "locality-planning",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/locality-planning/"
+  },
+  {
+    "Brand": "localvolts",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/localvolts/"
+  },
+  {
+    "Brand": "lumo",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/lumo/"
+  },
+  {
+    "Brand": "macarthur",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/macarthur/"
+  },
+  {
+    "Brand": "macquarie",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/macquarie/"
+  },
+  {
+    "Brand": "metered-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/metered-energy/"
+  },
+  {
+    "Brand": "microgrid",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/microgrid/"
+  },
+  {
+    "Brand": "momentum",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/momentum/"
+  },
+  {
+    "Brand": "myob",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/ovo-energy/"
+  },
+  {
+    "Brand": "nectr",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/nectr/"
+  },
+  {
+    "Brand": "next-business",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/next-business/"
+  },
+  {
+    "Brand": "origin",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/origin/"
+  },
+  {
+    "Brand": "ovo-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/ovo-energy/"
+  },
+  {
+    "Brand": "pacific-blue",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/pacific-blue/"
+  },
+  {
+    "Brand": "people-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/people-energy/"
+  },
+  {
+    "Brand": "perpetual",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/perpetual/"
+  },
+  {
+    "Brand": "powerdirect",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/powerdirect/"
+  },
+  {
+    "Brand": "powerhub",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/powerhub/"
+  },
+  {
+    "Brand": "powershop",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/powershop/"
+  },
+  {
+    "Brand": "powow",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/powow/"
+  },
+  {
+    "Brand": "raa",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/energy-locals/"
+  },
+  {
+    "Brand": "radian",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/radian/"
+  },
+  {
+    "Brand": "real-utilities",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/real-utilities/"
+  },
+  {
+    "Brand": "reamped",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/reamped/"
+  },
+  {
+    "Brand": "red-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/red-energy/"
+  },
+  {
+    "Brand": "sanctuary",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/sanctuary/"
+  },
+  {
+    "Brand": "savant",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/savant/"
+  },
+  {
+    "Brand": "seene",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/seene/"
+  },
+  {
+    "Brand": "shell-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/shell-energy/"
+  },
+  {
+    "Brand": "smart-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/smart-energy/"
+  },
+  {
+    "Brand": "smartestenergy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/smartestenergy/"
+  },
+  {
+    "Brand": "solstice",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/solstice/"
+  },
+  {
+    "Brand": "sonnen",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/sonnen/"
+  },
+  {
+    "Brand": "stanwell",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/stanwell/"
+  },
+  {
+    "Brand": "sumo-gas",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/sumo-gas/"
+  },
+  {
+    "Brand": "sumo-power",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/sumo-power/"
+  },
+  {
+    "Brand": "sunswitch",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/future-x/"
+  },
+  {
+    "Brand": "tango",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/tango/"
+  },
+  {
+    "Brand": "telstra-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/telstra-energy/"
+  },
+  {
+    "Brand": "tesla",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/tesla/"
+  },
+  {
+    "Brand": "yes-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/yes-energy/"
+  },
+  {
+    "Brand": "zen-energy",
+    "BaseUrl": "https://cdr.energymadeeasy.gov.au/zen-energy/"
+  }
+]

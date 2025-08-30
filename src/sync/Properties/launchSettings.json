@@ -3,6 +3,10 @@
     "sync": {
       "commandName": "Project",
       "commandLineArgs": "\"$(ProjectDir)\\..\\..\\data\""
+    },
+    "update-retailers": {
+      "commandName": "Project",
+      "commandLineArgs": "update-retailers \"$(ProjectDir)\\..\\..\\data\""
     }
   }
 }

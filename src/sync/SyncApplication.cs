@@ -1,6 +1,8 @@
 using System.Net.Http.Headers;
 using sync.Models;
 using sync.Services;
+using System.Text.Json;
+using System.Linq;
 
 namespace sync;
 
@@ -21,8 +23,22 @@ internal class SyncApplication
 
     public async Task RunAsync(string outputDirectory, CancellationToken cancellationToken = default)
     {
-        // Get all retailers
-        var retailers = await _retailers.GetRetailersAsync();
+        // Load retailers from retailers.json in the output directory
+        var retailersFile = Path.Combine(outputDirectory, "retailers.json");
+        if (!File.Exists(retailersFile))
+        {
+            throw new ArgumentException($"Missing retailers.json in '{outputDirectory}'. Run 'sync update-retailers <output-directory>' first.");
+        }
+
+        List<(string brand, string baseUrl)> retailers;
+        await using (var fs = File.OpenRead(retailersFile))
+        {
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            var entries = await JsonSerializer.DeserializeAsync<List<RetailerEntry>>(fs, options, cancellationToken) 
+                          ?? new List<RetailerEntry>();
+            retailers = entries.Select(e => (e.Brand, e.BaseUrl)).ToList();
+        }
+
         Console.WriteLine($"Retailer count: {retailers.Count}");
         Console.WriteLine("");
 
@@ -45,6 +61,31 @@ internal class SyncApplication
         try
         {
             await DownloadMissingPlansAsync(retailerPlans, outputDirectory, cancellationToken);
+        }
+        finally
+        {
+            Console.WriteLine("::endgroup::");
+        }
+    }
+
+    public async Task UpdateRetailers(string outputDirectory, CancellationToken cancellationToken = default)
+    {
+        Console.WriteLine("::group::Update retailers");
+        try
+        {
+            var retailers = await _retailers.GetRetailersAsync();
+            Console.WriteLine($"Retailer count: {retailers.Count}");
+
+            var output = retailers
+                .Select(r => new { Brand = r.brand, BaseUrl = r.baseUrl })
+                .OrderBy(r => r.Brand)
+                .ToList();
+
+            var filePath = Path.Combine(outputDirectory, "retailers.json");
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            await using var fs = File.Create(filePath);
+            await JsonSerializer.SerializeAsync(fs, output, options, cancellationToken);
+            Console.WriteLine($"Wrote retailers to {filePath}");
         }
         finally
         {
@@ -114,4 +155,6 @@ internal class SyncApplication
             Console.WriteLine($"{i+1}/{retailerPlans.Count} retailers complete.");
         }
     }
+
+    private sealed record RetailerEntry(string Brand, string BaseUrl);
 }
