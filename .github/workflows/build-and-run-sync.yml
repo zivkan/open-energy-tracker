@@ -8,8 +8,12 @@ on:
         type: boolean
         required: false
         default: false
+  # https://consumerdatastandardsaustralia.github.io/standards/?examples#definitions
+  # low traffic time is between midnight and 6am.
+  # My RNG chose 2:43am, though it will be 3:43am during daylight savings.
+  # remember cron is in UTC.
   schedule:
-    - cron: "0 12 1 * *"
+    - cron: "43 16 1 * *"
 
 permissions:
   contents: write
@@ -51,7 +55,7 @@ jobs:
           if [[ -n "$(git status --porcelain)" ]]; then
             echo "git status --porcelain:" 
             git status --porcelain
-            if [[ "${{ inputs.dry_run }}" == "false" ]]; then
+            if [[ "${{ inputs.dry_run }}" != "true" ]]; then
               git config user.name "github-actions[bot]"
               git config user.email "github-actions[bot]@users.noreply.github.com"
               git add -A
